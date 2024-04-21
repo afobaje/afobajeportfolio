@@ -23,7 +23,7 @@ export default function About() {
   })
   return (
     <section ref={aboutRef} className=''>
-      <div className='l-container text-2xl md:text-4xl leading-normal md:leading-[3.4375rem]'>
+      <div className='p-10 md:p-20 text-2xl md:text-4xl leading-normal md:leading-[3.4375rem]'>
         <div className=' '>
           <p >I am a software developer with vast experience creating different web applications for different niches. I have worked on e-commerce, chat applications among many others.</p>
           <p >I currently work as a <span className='text-deep-brown'>frontend developer</span> at <Link href='https://oms.flourishafrica.com' className='underline underline-offset-2 text-deep-brown'>Flourish Africa</Link></p>

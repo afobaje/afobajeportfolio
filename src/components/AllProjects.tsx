@@ -69,7 +69,7 @@ export default function AllProjects() {
     }, { scope: tabRef })
     return (
         <section className='w-full'>
-            <div className='l-container '>
+            <div className='px-10 md:px-20 '>
                 <h2 className=' text-6xl mt-60 '>Projects</h2>
                 <div ref={tabRef} className='flex relative min-h-[150dvh] flex-col'>
                     {

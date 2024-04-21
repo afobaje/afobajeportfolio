@@ -4,7 +4,7 @@ export default function Footer() {
 
   return ( 
     <footer className='w-full bg-milky-white min-h-[100dvh]'>
-        <div className='flex l-container flex-col'>
+        <div className='flex px-10 md:px-20 flex-col'>
             <div className='text-4xl md:text-8xl font-extrabold gap-4 md:gap-8 flex flex-col'>
                 <p>Send a message!</p>
                 <p>Let us collaborate</p>
