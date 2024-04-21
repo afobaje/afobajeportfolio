@@ -25,7 +25,7 @@ export default function Intro() {
 
 
     return (
-        <section className='flex  flex-col my-20 w-full h-[100dvh] l-container'>
+        <section className='flex  flex-col my-20 w-full h-[100dvh] px-10 md:px-20'>
             <p className='font-bold text-6xl md:text-8xl'>Hi,I&apos;m David, a </p>
             <p className='font-bold text-6xl md:text-8xl' ref={titleRef}>Front end developer</p>
         </section>
