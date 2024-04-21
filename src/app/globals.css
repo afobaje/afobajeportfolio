@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: "Swanky Mojo";
+    src: url('./../assets/Swanky\ Mojo.otf') format("opentype");
+    font-weight: normal;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: "Coolvetica";
+    src: url('./../assets/coolvetica\ rg.otf') format('opentype');
+    font-weight: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.l-container{
+    max-width: 1220px;
+    padding:5rem;
+    margin: auto;
 }
+
+.hamburger div span:first-child{
+
+    visibility: hidden;
+}
+.hamburger div span:nth-child(2){
+    rotate:45deg;
+    transform-origin:35%;
+    transition: rotate .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    /* transform:translateX(-50%) translateY(-50%); */
+}
+
+.hamburger div span:nth-child(3){
+    rotate:-45deg;
+    transition: rotate .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+    /* transform-origin:center; */
+    transform-origin: 35%;
+    /* transform-style: preserve-3d; */
+    /* transform-origin:center; */
+    /* transform:translateX(-50%) translateY(-50%); */
+}
+
+
+
+
+
